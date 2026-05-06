@@ -5,7 +5,7 @@ export default function AuthLayout({ children }: { children: ReactNode }) {
   return (
     <div className="flex min-h-screen bg-base">
       {/* Left panel — Branding & Features */}
-      <div className="hidden lg:flex lg:flex-1 flex-col justify-center px-12 xl:px-24 bg-surface border-r border-border-default">
+      <div className="hidden lg:flex lg:flex-1 flex-col justify-center px-12 xl:px-24 bg-elevated border-r border-border-default">
         <div className="max-w-md">
           {/* Logo */}
           <div className="flex items-center gap-3 mb-20">

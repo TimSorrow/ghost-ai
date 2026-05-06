@@ -36,6 +36,7 @@ export default function RootLayout({
           colorText: "#f0f0f4",
           colorTextSecondary: "#808090",
           borderRadius: "0.75rem",
+          fontFamily: "var(--font-sans)",
         },
         elements: {
           card: "bg-[#111114] border border-[#2a2a30] shadow-2xl",
