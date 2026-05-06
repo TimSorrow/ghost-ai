@@ -29,13 +29,23 @@ export default function RootLayout({
       appearance={{
         baseTheme: dark,
         variables: {
-          colorPrimary: "#00c8d4", // matches --accent-primary
-          colorBackground: "#111114", // matches --bg-surface
-          colorInputBackground: "#080809", // matches --bg-base
-          colorInputText: "#f0f0f4", // matches --text-primary
+          colorPrimary: "#00c8d4",
+          colorBackground: "#111114",
+          colorInputBackground: "#18181c",
+          colorInputText: "#f0f0f4",
           colorText: "#f0f0f4",
-          colorTextSecondary: "#c0c0cc",
+          colorTextSecondary: "#808090",
+          borderRadius: "0.75rem",
         },
+        elements: {
+          card: "bg-[#111114] border border-[#2a2a30] shadow-2xl",
+          formButtonPrimary: "bg-[#00c8d4] hover:bg-[#00b0ba] text-black font-bold py-3 transition-all",
+          socialButtonsBlockButton: "bg-[#18181c] border border-[#2a2a30] hover:bg-[#1e1e23] text-text-primary transition-all",
+          formFieldInput: "bg-[#18181c] border-[#2a2a30] focus:border-[#00c8d4] transition-all",
+          footerActionLink: "text-[#00c8d4] hover:text-[#00b0ba]",
+          headerTitle: "text-2xl font-bold tracking-tight text-text-primary",
+          headerSubtitle: "text-text-muted",
+        }
       }}
     >
       <html
