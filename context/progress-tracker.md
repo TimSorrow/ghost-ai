@@ -4,11 +4,11 @@ Update this file whenever the current phase, active feature, or implementation s
 
 ## Current Phase
 
-- Feature 02: Editor Chrome — Complete
+- Feature 03: Authentication (Clerk) — Complete
 
 ## Current Goal
 
-- Feature 03: Authentication (Clerk) — next feature unit.
+- Feature 04: Database and Projects — next feature unit.
 
 ## Completed
 
@@ -19,18 +19,23 @@ Update this file whenever the current phase, active feature, or implementation s
 - All 7 UI components in `components/ui/`: Button, Card, Dialog, Input, Tabs, Textarea, ScrollArea.
 - `app/globals.css` — full dark theme tokens + shadcn CSS var mappings + Tailwind v4 `@theme inline`.
 - `color-scheme: dark` on `html` — no light styling.
-- `components/editor/editor-navbar.tsx` — fixed top navbar with `PanelLeftOpen/PanelLeftClose` toggle.
+- `components/editor/editor-navbar.tsx` — fixed top navbar with `PanelLeftOpen/PanelLeftClose` toggle and `UserButton`.
 - `components/editor/project-sidebar.tsx` — floating overlay sidebar, slides in from left, Tabs (My Projects / Shared), empty states, New Project button.
-- `tsc --noEmit` exits 0 — no TypeScript errors.
+- `app/editor/page.tsx` — initial editor route.
+- Clerk integration: `ClerkProvider` in root layout, custom sign-in/up pages with two-panel layout.
+- `proxy.ts` — route protection for `/editor` and `/api`.
+- Root route `/` handles redirects based on auth state.
+- `npm run build` passes.
 - Pushed to GitHub: `https://github.com/TimSorrow/ghost-ai.git`.
 
 ## In Progress
 
 - None.
 
+
 ## Next Up
 
-- Feature 03: Authentication (Clerk) — sign-in, route protection, user identity.
+- Feature 04: Database and Projects — Prisma/Postgres setup, project CRUD.
 
 ## Open Questions
 
