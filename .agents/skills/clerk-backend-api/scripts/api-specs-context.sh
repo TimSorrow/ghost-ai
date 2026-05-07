@@ -23,8 +23,13 @@ versions=$(curl -s "$API_URL" | node -e "
 
 latest=$(echo "$versions" | tail -1)
 
+if [[ -z "$latest" ]]; then
+  echo "ERROR: Could not determine latest BAPI spec version." >&2
+  exit 1
+fi
+
 echo "AVAILABLE VERSIONS: $(echo "$versions" | tr '\n' ' ')"
 echo "LATEST VERSION: $latest"
 echo ""
 echo "TAGS:"
-curl -s "${RAW_BASE}/${latest}" | node "$(dirname "$0")/extract-tags.js"
+curl -s --fail "${RAW_BASE}/${latest}" | node "$(dirname "$0")/extract-tags.js"

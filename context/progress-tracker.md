@@ -35,7 +35,7 @@ Update this file whenever the current phase, active feature, or implementation s
 
 ## Next Up
 
-- Feature 03: Authentication (Clerk) — sign-in, route protection, user identity.
+- Feature 04: Database and Projects — Prisma/Postgres setup, project CRUD.
 
 ## Open Questions
 

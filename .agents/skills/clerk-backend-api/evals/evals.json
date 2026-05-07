@@ -68,7 +68,8 @@
         "Spreads existing metadata before adding new fields ({ ...user.publicMetadata, plan: 'pro' })",
         "Calls updateUser with the merged metadata object",
         "Warns that this applies to publicMetadata, privateMetadata, and unsafeMetadata equally"
-      ]
+      ],
+      "files": []
     },
     {
       "id": 6,
@@ -81,7 +82,8 @@
         "Suggests batching operations or reducing call frequency",
         "Mentions that currentUser() counts as an API call against the limit",
         "Recommends using auth() instead of currentUser() when only session claims are needed"
-      ]
+      ],
+      "files": []
     }
   ]
 }

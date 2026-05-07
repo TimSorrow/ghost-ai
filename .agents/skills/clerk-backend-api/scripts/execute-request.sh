@@ -18,6 +18,7 @@ while true; do
   for _envfile in "$_dir/.env" "$_dir/.env.local"; do
     if [[ -f "$_envfile" ]]; then
       set -a
+      # shellcheck disable=SC1090
       source "$_envfile"
       set +a
     fi
